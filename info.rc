@@ -1,0 +1,22 @@
+1 VERSIONINFO
+FILEVERSION     0,0,0,1
+PRODUCTVERSION  0,0,0,1
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "080904E4"
+    BEGIN
+      VALUE "FileDescription", "Command line version of Win32DiskImager"
+      VALUE "FileVersion", "0.0.0.1"
+      VALUE "InternalName", "CommandLineDiskImager"
+      VALUE "OriginalFilename", "CommandLineDiskImager.exe"
+      VALUE "ProductName", "CommandLineDiskImager"
+      VALUE "ProductVersion", "0.0.0.1"
+    END
+  END
+
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x809, 1252
+  END
+END
