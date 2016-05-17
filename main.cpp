@@ -127,8 +127,22 @@ int main(int argc, char *argv[])
                 printf("\nerror - not enough space");
                 return 1;
             }
+
+            char total_string[32];
+            sprintf(total_string, "%d", numsectors);
+
             for (i = 0ul; i < numsectors && status == STATUS_WRITING; i += 1024ul)
             {
+                if( i % 100 == 0 )
+                {
+                    char i_string[32];
+                    sprintf(i_string, "%d", i);
+                    printf(i_string);
+                    printf("/");
+                    printf(total_string);
+                    setbuf(stdout, NULL);
+                }
+
                 sectorData = readSectorDataFromHandle(hFile, i, (numsectors - i >= 1024ul) ? 1024ul:(numsectors - i), sectorsize);
                 if (sectorData == NULL)
                 {
