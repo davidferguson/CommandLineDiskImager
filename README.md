@@ -17,3 +17,18 @@ Example:
 `CommandLineDiskImager.exe C:\Users\John\Downloads\raspbian.img G`
 
 would write the image file located `C:\Users\John\Downloads\raspbian.img G` to the drive `G:`
+
+
+## Error codes
+The file will exit with the following error codes:
+1. not enough arguments
+2. .img not found
+3. device not found
+4. invalid handle value for volume
+5. can't get lock on volume
+6. can't unmount volume
+7. invalid handle value for file
+8. invalid handle value for disk
+9. not enough space on volume
+10. sector data is null
+11. error whilst writing
